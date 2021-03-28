@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="bg-black muli">
+    <section id="home" class="min-h-50vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Клиент #{{ data.info.name }}</h1>
+            </div>
+        </div>
+    </section>
+        <div class="flex md-flex-row md-w-80pc mx-auto">
+            {% for key, value in data.info.items() %}
+            <div class="w-100pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 ease-300">
+                    <h1 class="white fw-1000">{{ key }}</h1>
+                    <h2 class="indigo-lightest opacity-50">{{ value }}</h2>
+                </div>
+                </div>
+            {% endfor %}
+        </div>
+    <div class="flex md-flex-row md-w-80pc mx-auto">
+            {% for value in data.submit %}
+            <div class="w-100pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 ease-300">
+                    <h1 class="white fw-1000">{{ value }}</h1>
+                    <h2 class="indigo-lightest opacity-50">Направление для клиента</h2>
+                </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

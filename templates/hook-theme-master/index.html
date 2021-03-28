@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="bg-black muli">
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Впишите сюда<br />id клиента:</h1>
+
+                <div class="br-8 mt-10 inline-flex">
+                    <form method="get" action="/predict">
+                        <input type="number" name="id"
+                            class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0"
+                            placeholder="client_id">
+                        <button type="submit"
+                            class="button-lg bg-indigo-lightest-20 indigo-lightest focus-white fw-300 fs-s3 mr-0 br-l-0">Предсказать туры</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
